@@ -1,0 +1,22 @@
+<h2>
+    <span>IOT Devices Information</span>
+</h2>
+
+<table class="bordered highlight responsive-table">
+    <thead>
+        <tr>
+            <th><span>Name</span></th>
+            <th>Gateway</th>
+            <th>Status</th>
+            <th><span>Battery %</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="device in devices | filter:query_devices">
+            <td>{{device.name}}</td>
+            <td>{{device.gateway}}</td>
+            <td>{{device.status}}</td>
+            <td>{{device.battery}}</td>
+        </tr>
+    </tbody>
+</table>

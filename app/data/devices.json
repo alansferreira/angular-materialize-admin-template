@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Device RTC2",
+    "gateway": "gate12",
+    "status": "online",
+    "battery": 2,
+    "users": [
+      {"id": 1, "email": "no-email","passwd": "11234", "type":"Admin"},
+      {"id": 2, "email": "no-email","passwd": "123", "type":"User"},
+      {"id": 3, "email": "ee","passwd": "2345", "type":"User"},
+      {"id": 4, "email": "no-email","passwd": "22", "type":"User"}
+    ]
+  }, {
+    "name": "Device RTA2",
+    "gateway": "gate13",
+    "status": "offline",
+    "battery": 20,
+    "users": [
+      {"id": 1, "email": "no-email","passwd": "11234", "type":"Admin"},
+      {"id": 2, "email": "aa","passwd": "123", "type":"User"},
+      {"id": 3, "email": "bb","passwd": "2345", "type":"User"},
+      {"id": 4, "email": "no-email","passwd": "122", "type":"User"}
+    ]
+  }, {
+    "name": "Device 3",
+    "gateway": "gate13",
+    "status": "online",
+    "battery": 85,
+    "users": [
+      {"id": 1, "email": "no-email","passwd": "11234", "type":"User"},
+      {"id": 2, "email": "no-email","passwd": "11234", "type":"Admin"},
+      {"id": 3, "email": "ee","passwd": "2", "type":"User"},
+      {"id": 4, "email": "no-email","passwd": "2212", "type":"User"}
+    ]
+  }, {
+    "name": "Device 4",
+    "gateway": "gate11",
+    "status": "online",
+    "battery": 99,
+    "users": [
+      {"id": 1, "email": "no-email","passwd": "11234", "type":"User"},
+      {"id": 2, "email": "no-email","passwd": "11234", "type":"Admin"},
+      {"id": 3, "email": "ee","passwd": "2", "type":"User"},
+      {"id": 4, "email": "no-email","passwd": "2212", "type":"User"}
+    ]
+  }
+
+]

@@ -1,0 +1,63 @@
+<html ng-app="mainModule">
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard using Angular & Materialize</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="assets/css/angular-material.min.css" />
+    <link rel="stylesheet" href="assets/css/md-data-table.min.css"/>
+    <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
+    <!-- JS-->
+    <script src="assets/javascript/jquery.min.js"></script>
+    <script src="assets/javascript/angular.min.js"></script>
+    <script src="assets/javascript/materialize.min.js"></script>
+
+    <script src="assets/javascript/angular-route.min.js"></script>
+    <script src="assets/javascript/angular-material.min.js"></script>
+    <script src="assets/javascript/angular-animate.min.js"></script>
+    <script src="assets/javascript/angular-aria.min.js"></script>
+    <script src="assets/javascript/angular-material-icons.min.js"></script>
+    <!-- custom js-->
+    <script src="js/init.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/home_controller.js"></script>
+    <script src="js/controllers/app_controller.js"></script>
+    <script src="js/controllers/devices_controller.js"></script>
+    <script src="js/controllers/users_controller.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body ng-controller="AppCtrl">
+    <ul id="slide-out" class="side-nav full">
+        <ul>
+            <li>
+                <a><ng-md-icon icon="person"></ng-md-icon> Administrator</a>
+                <a href=""#>Logout</a>
+            </li>
+        </ul>
+        <li class="divider"></li>
+        <ul ng-repeat="item in menu">
+            <li>
+                <a href="{{item.link}}" style="color:unset;text-decoration:none;">
+                    <ng-md-icon icon="{{item.icon}}"></ng-md-icon>
+                    {{item.title}}
+                </a>
+            </li>
+        </ul>
+
+    </ul>
+
+    <nav >
+        <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="brand-logo" id="button-collapse"><ng-md-icon size="42" icon="menu"></ng-md-icon></a>
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="container">
+            <!--<div ui-view></div>-->
+            <div ng-view></div>
+        </div>
+    </div>
+</body>
+</html>
